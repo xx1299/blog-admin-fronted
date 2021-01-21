@@ -8,3 +8,9 @@ export function getLogList(params) {
   })
 }
 
+export function delLog(id) {
+  return request({
+    url: `/logs/${id}`,
+    method: 'delete'
+  })
+}
